@@ -9,10 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { Box, Button, Container } from "@material-ui/core";
 import Checkbox from '@material-ui/core/Checkbox';
-import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import moment from "moment";
 
 const StyledTableCell = withStyles((theme) => ({
@@ -33,16 +30,6 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(id, name, desc) {
-  return { id, name, desc };
-}
-
-const rows = [
-  createData(1, "John", "Developer"),
-  createData(2, "Peter", "Manager"),
-  createData(3, "Tony", "Engineer"),
-  createData(4, "Rose", "HR"),
-];
 
 const useStyles = makeStyles({
   table: {
